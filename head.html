@@ -1,0 +1,16 @@
+<head>
+	<title>Projekt</title>
+	<link rel='StyleSheet' href='smokingstyles.css' type='text/css'/>
+	<script type="text/javascript" src='jquery.js'></script>
+	<meta charset="UTF-8">
+	<script>
+		$(function () {
+			setTimeout("displaytime()", 1000);
+		})
+		function displaytime() {
+			var dt = new Date();
+			$('#idtime').html(dt.toLocaleTimeString());
+			setTimeout("displaytime()", 1000)
+		}
+	</script>
+</head>

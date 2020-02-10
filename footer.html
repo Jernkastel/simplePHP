@@ -1,0 +1,13 @@
+<script>
+	$(function () {
+		setTimeout("displaytime()", 1000);
+	})
+	function displaytime() {
+		var dt = new Date();
+		$('#idtime').html(dt.toLocaleTimeString());
+		setTimeout("displaytime()", 1000)
+	}
+</script>
+<footer id="foot">
+	<p>Something something Copyright @ 2018 <br/> Max Jern WPB310 Projekt <label id="idtime" style="font-size: 12pt"></label></p>
+</footer>
